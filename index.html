@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Happy Creative Ecosystem - anime-inspired merchandise, wallpapers, dark art, and creative design branches.">
+  <title>Happy Creative Ecosystem</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand-mark" href="#home" aria-label="Happy Creative Ecosystem home">
+      <span>HAPPY</span>
+      <small>Creative Ecosystem</small>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" data-nav>
+      <a class="is-active" href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions" aria-label="Header actions">
+      <!-- Replace these placeholder buttons with real search, account, and cart features later. -->
+      <button class="icon-button" type="button" aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m16.5 16.5 4 4"></path>
+        </svg>
+      </button>
+      <button class="icon-button" type="button" aria-label="User account">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="8" r="4"></circle>
+          <path d="M4 21c1.8-4 4.4-6 8-6s6.2 2 8 6"></path>
+        </svg>
+      </button>
+      <button class="icon-button cart-button" type="button" aria-label="Cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 8H6"></path>
+          <circle cx="9.5" cy="21" r="1"></circle>
+          <circle cx="18" cy="21" r="1"></circle>
+        </svg>
+        <span>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Happy Creative Ecosystem</p>
+        <h1>Creative Worlds by Happy</h1>
+        <p class="hero-subtitle">Three creative branches. Infinite imagination.</p>
+
+        <ul class="brand-lines" aria-label="Brand descriptions">
+          <li><strong class="accent-yellow">Happy GL</strong> - Anime & game-inspired designs and merchandise.</li>
+          <li><strong class="accent-blue">Happy FL</strong> - Original illustrations and dark art creations.</li>
+          <li><strong class="accent-magenta">Happy AL</strong> - High-quality anime wallpapers for every screen.</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#shop">Explore Shop</a>
+          <a class="button button-secondary" href="#shop">View Products</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Featured artwork panels">
+        <article class="art-panel art-panel-yellow">
+          <img src="assets/hero/hu-tao.jpg" alt="Hu Tao game wallpaper artwork">
+          <span>Game Wallpapers</span>
+          </article>
+          <article class="art-panel art-panel-blue">
+            <img src="assets/hero/orange-original-art.jpg" alt="Orange-haired original artwork">
+            <span>Original Art</span>
+          </article>
+        <article class="art-panel art-panel-magenta">
+          <img src="assets/hero/frieren.jpg" alt="Frieren anime wallpaper artwork">
+          <span>Anime Wallpapers</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="brand-section section-shell" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">Creative Lines</p>
+        <h2>Our Creative Lines</h2>
+      </div>
+
+      <div class="brand-grid">
+        <article class="brand-card brand-gl">
+          <img src="assets/logos/happy-gl-logo.png" alt="Happy GL logo">
+          <h3>Happy GL</h3>
+          <p>Anime &amp; game-inspired designs for apparel, posters, and collectibles.</p>
+          <a class="line-link" href="#" data-link-path="brands.happyGL.primary">Explore Happy GL</a>
+        </article>
+        <article class="brand-card brand-fl">
+          <img src="assets/logos/happy-fl-logo.png" alt="Happy FL logo">
+          <h3>Happy FL</h3>
+          <p>Original illustrations, dark artworks, and unique visual concepts.</p>
+          <a class="line-link" href="#" data-link-path="brands.happyFL.primary">Explore Happy FL</a>
+        </article>
+        <article class="brand-card brand-al">
+          <img src="assets/logos/happy-al-logo.png" alt="Happy AL logo">
+          <h3>Happy AL</h3>
+          <p>AI-generated anime wallpapers for desktop and mobile screens.</p>
+          <a class="line-link" href="#" data-link-path="brands.happyAL.primary">Explore Happy AL</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="shop-section section-shell" id="shop">
+      <div class="section-heading section-heading-row">
+        <div>
+          <p class="eyebrow">Collection</p>
+          <h2>Shop by Collection</h2>
+        </div>
+      </div>
+
+      <div class="filter-tabs" role="tablist" aria-label="Product filters">
+        <button class="filter-tab is-active" type="button" data-filter="all">All Products</button>
+        <button class="filter-tab" type="button" data-filter="tshirt">T-Shirt Designs</button>
+        <button class="filter-tab" type="button" data-filter="wallpaper">Anime Wallpapers</button>
+        <button class="filter-tab" type="button" data-filter="dark-art">Dark Art Prints</button>
+      </div>
+
+      <div class="status-message" data-product-status hidden></div>
+      <div class="product-grid" data-products></div>
+      <div class="product-pagination" data-product-pagination hidden></div>
+    </section>
+
+    <section class="platform-section section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Platforms</p>
+        <h2>Where to Find Me</h2>
+      </div>
+
+      <div class="platform-grid">
+        <!-- Replace href values with your real platform links when ready. -->
+        <a class="platform-card platform-deviantart" href="#" data-platform="deviantArt" aria-label="Open DeviantArt profiles">
+          <span class="platform-icon" aria-hidden="true">
+            <img src="assets/icons/social/deviantart.png" alt="">
+          </span>
+          <strong>DeviantArt</strong>
+          <small>Wallpapers &amp; artworks</small>
+        </a>
+        <a class="platform-card platform-teepublic" href="#" data-platform="teePublic" aria-label="Open TeePublic store">
+          <span class="platform-icon" aria-hidden="true">
+            <img src="assets/icons/social/teepublic.png" alt="">
+          </span>
+          <strong>TeePublic</strong>
+          <small>T-shirt designs</small>
+        </a>
+        <a class="platform-card platform-instagram" href="#" data-platform="instagram" aria-label="Open Instagram profiles">
+          <span class="platform-icon" aria-hidden="true">
+            <img src="assets/icons/social/instagram.png" alt="">
+          </span>
+          <strong>Instagram</strong>
+          <small>Updates &amp; previews</small>
+        </a>
+        <a class="platform-card platform-reddit" href="#" data-platform="reddit" aria-label="Open Reddit profile">
+          <span class="platform-icon" aria-hidden="true">
+            <img src="assets/icons/social/reddit.png" alt="">
+          </span>
+          <strong>Reddit</strong>
+          <small>Community posts</small>
+        </a>
+        <a class="platform-card platform-x" href="#" data-platform="x" aria-label="Open X profiles">
+          <span class="platform-icon" aria-hidden="true">
+            <img src="assets/icons/social/x.png" alt="">
+          </span>
+          <strong>X</strong>
+          <small>News &amp; design drops</small>
+        </a>
+        <a class="platform-card platform-pinterest" href="#" data-platform="pinterest" aria-label="Open Pinterest profiles">
+          <span class="platform-icon" aria-hidden="true">
+            <img src="assets/icons/social/pinterest.png" alt="">
+          </span>
+          <strong>Pinterest</strong>
+          <small>Inspiration &amp; collections</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="services-section section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Creative Services</p>
+        <h2>What I Create</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="service-icon">T</span>
+          <h3>T-Shirt Designs</h3>
+          <p>Anime, game, and original themed apparel designs.</p>
+          <a href="#shop">Shop T-Shirts</a>
+        </article>
+        <article class="service-card">
+          <span class="service-icon">W</span>
+          <h3>Anime Wallpapers</h3>
+          <p>High-quality wallpapers for desktop and mobile.</p>
+          <a href="#shop">Browse Wallpapers</a>
+        </article>
+        <article class="service-card">
+          <span class="service-icon">A</span>
+          <h3>Original Dark Art</h3>
+          <p>Unique dark illustrations and fantasy-inspired artworks.</p>
+          <a href="#shop">View Dark Art</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing-section section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Digital Options</p>
+        <h2>Pricing &amp; Licenses</h2>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Replace prices and license descriptions here when your offer changes. -->
+        <article class="pricing-card">
+          <h3>Anime Wallpaper</h3>
+          <strong>$3</strong>
+          <p>High-quality digital wallpaper for desktop or mobile.</p>
+        </article>
+        <article class="pricing-card is-featured">
+          <h3>Personal Use License</h3>
+          <strong>$20</strong>
+          <p>For personal projects, profile use, and private collections.</p>
+        </article>
+        <article class="pricing-card">
+          <h3>Commercial Use License</h3>
+          <strong>$40</strong>
+          <p>For merchandise, print-on-demand, and commercial projects.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section section-shell" id="contact">
+      <div class="cta-content">
+        <p class="eyebrow">Custom Work</p>
+        <h2>Need a Custom Design?</h2>
+        <p>Want a unique design, wallpaper, or dark artwork created in my style? Contact me and let's create something special.</p>
+        <div class="hero-actions">
+          <!-- Replace these placeholder links with your real contact and Instagram URLs. -->
+          <a class="button button-primary" href="#" data-link-path="contact.main">Contact Me</a>
+          <a class="button button-secondary" href="#" data-link-path="contact.instagram">Message on Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h2>Happy Creative Ecosystem</h2>
+      <p>Three worlds. One passion. Unlimited creativity.</p>
+    </div>
+    <nav aria-label="Footer brand links">
+      <a href="#" data-link-path="brands.happyGL.primary">Happy GL</a>
+      <a href="#" data-link-path="brands.happyFL.primary">Happy FL</a>
+      <a href="#" data-link-path="brands.happyAL.primary">Happy AL</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <nav aria-label="Footer platform links">
+      <a href="#" data-platform="deviantArt">DeviantArt</a>
+      <a href="#" data-platform="teePublic">TeePublic</a>
+      <a href="#" data-platform="instagram">Instagram</a>
+      <a href="#" data-platform="reddit">Reddit</a>
+      <a href="#" data-platform="x">X</a>
+      <a href="#" data-platform="pinterest">Pinterest</a>
+    </nav>
+    <p class="copyright">&copy; 2026 Happy Creative Ecosystem. All rights reserved.</p>
+  </footer>
+
+  <section class="account-modal" data-account-modal hidden aria-hidden="true">
+    <div class="account-modal-card" role="dialog" aria-modal="true" aria-labelledby="account-modal-title">
+      <button class="account-modal-close" type="button" aria-label="Close account selector" data-modal-close>
+        <span></span>
+        <span></span>
+      </button>
+      <p class="eyebrow">Choose account</p>
+      <h2 id="account-modal-title">Choose account</h2>
+      <p class="account-modal-subtitle" data-account-modal-subtitle>Select which Happy profile you want to open.</p>
+      <div class="account-options" data-account-options></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

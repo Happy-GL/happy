@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "import:deviantart": "node scripts/import-deviantart.js"
+  }
+}

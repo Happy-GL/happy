@@ -1,0 +1,35 @@
+[
+  {
+    "brand": "Happy GL",
+    "brandKey": "happyGL",
+    "username": "happygl1",
+    "category": "tshirt",
+    "type": "T-Shirt Design",
+    "price": "$24.00",
+    "buttonText": "SHOP",
+    "defaultLink": "https://www.teepublic.com/user/happy-gl",
+    "featured": false
+  },
+  {
+    "brand": "Happy FL",
+    "brandKey": "happyFL",
+    "username": "happyfi",
+    "category": "dark-art",
+    "type": "Dark Art",
+    "price": "$20.00",
+    "buttonText": "VIEW",
+    "defaultLink": null,
+    "featured": false
+  },
+  {
+    "brand": "Happy AL",
+    "brandKey": "happyAL",
+    "username": "happyal1",
+    "category": "wallpaper",
+    "type": "Anime Wallpaper",
+    "price": "$3.00",
+    "buttonText": "VIEW",
+    "defaultLink": null,
+    "featured": false
+  }
+]

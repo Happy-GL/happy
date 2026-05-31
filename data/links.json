@@ -1,0 +1,56 @@
+{
+  "brands": {
+    "happyGL": {
+      "name": "Happy GL",
+      "primary": "https://www.deviantart.com/happygl1",
+      "teePublic": "https://www.teepublic.com/user/happy-gl",
+      "pinterest": "https://www.pinterest.com/Happy_GL/",
+      "deviantArt": "https://www.deviantart.com/happygl1",
+      "x": "https://x.com/1HappyGl",
+      "instagram": "https://www.instagram.com/happy_gl1/"
+    },
+    "happyFL": {
+      "name": "Happy FL",
+      "primary": "https://www.deviantart.com/happyfi",
+      "deviantArt": "https://www.deviantart.com/happyfi",
+      "instagram": "https://www.instagram.com/_happyfl/",
+      "x": "https://x.com/_HappyFL",
+      "pinterest": "https://www.pinterest.com/flhappy4/_profile/",
+      "reddit": "https://www.reddit.com/user/Happy_Fl/"
+    },
+    "happyAL": {
+      "name": "Happy AL",
+      "primary": "https://www.deviantart.com/happyal1",
+      "deviantArt": "https://www.deviantart.com/happyal1"
+    }
+  },
+  "platforms": {
+    "deviantArt": {
+      "happyGL": "https://www.deviantart.com/happygl1",
+      "happyFL": "https://www.deviantart.com/happyfi",
+      "happyAL": "https://www.deviantart.com/happyal1"
+    },
+    "teePublic": {
+      "happyGL": "https://www.teepublic.com/user/happy-gl"
+    },
+    "instagram": {
+      "happyGL": "https://www.instagram.com/happy_gl1/",
+      "happyFL": "https://www.instagram.com/_happyfl/"
+    },
+    "reddit": {
+      "happyFL": "https://www.reddit.com/user/Happy_Fl/"
+    },
+    "x": {
+      "happyGL": "https://x.com/1HappyGl",
+      "happyFL": "https://x.com/_HappyFL"
+    },
+    "pinterest": {
+      "happyGL": "https://www.pinterest.com/Happy_GL/",
+      "happyFL": "https://www.pinterest.com/flhappy4/_profile/"
+    }
+  },
+  "contact": {
+    "main": "https://www.instagram.com/happy_gl1/",
+    "instagram": "https://www.instagram.com/happy_gl1/"
+  }
+}
