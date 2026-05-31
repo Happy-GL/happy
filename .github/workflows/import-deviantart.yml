@@ -1,0 +1,46 @@
+name: Import DeviantArt Products
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-deviantart:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Import DeviantArt products
+        run: npm run import:deviantart
+
+      - name: Commit updated DeviantArt products
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet data/deviantart-products.json; then
+            echo "No DeviantArt product updates."
+          else
+            git add data/deviantart-products.json
+            git commit -m "chore: update DeviantArt products"
+            git push
+          fi
